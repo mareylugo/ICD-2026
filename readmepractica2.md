@@ -26,3 +26,15 @@ Técnicas aplicadas en el notebook:
 ## Declaración de uso de inteligencia artificial
 
 Se utilizó el asistente de inteligencia artificial Claude (Anthropic) en la elaboración del código en este notebook. La autora revisó el contenido y es responsable de su exactitud.
+
+## Referencias
+
+[1] Organización Mundial de la Salud, «Cáncer de cuello uterino», Notas descriptivas de la OMS, 3 de julio de 2026. [En línea]. Disponible en: <https://www.who.int/es/news-room/fact-sheets/detail/cervical-cancer>. [Accedido: 17-sep-2026].
+
+[2] K. Fernandes, J. Cardoso, and J. Fernandes. "Cervical Cancer (Risk Factors)," UCI Machine Learning Repository, 2017. [Online]. Available: <https://doi.org/10.24432/C5Z310>.
+
+[3] M. Likhite, "Cervical Cancer Diagnosis with Machine Learning: Part 1 — Data," Data Science Collective, Medium, Oct. 19, 2025. [Online]. Available: <https://medium.com/data-science-collective/cervical-cancer-diagnosis-with-machine-learning-part-1-data-f1e17af779f5>. [Accessed: Sep. 17, 2026].
+
+[4] "La madre más prolífica de la historia," Guinness World Records. [Online]. Available: <https://www.guinnessworldrecords.com/world-records/most-prolific-mother-ever>. [Accessed: Sep. 18, 2026].
+
+[5] "La persona más longeva de la historia," Guinness World Records. [Online]. Available: <https://www.guinnessworldrecords.com/world-records/oldest-person>. [Accessed: Sep. 18, 2026].
