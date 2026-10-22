@@ -1,1 +1,75 @@
+# Notebook: metricas de clasificación
 
+Notebook de la materia *Introducción a la Ciencia de Datos* (Maestría en Ciencias de la Computación, CICESE).
+
+Un banco portugués llamó por teléfono a sus clientes para ofrecerles un depósito a plazo, y solo uno de cada nueve aceptó. El notebook construye un modelo de regresión logística que estima la probabilidad de que un cliente acepte y lo evalúa con métricas de clasificación y con una ganancia económica.
+
+## Contenido del repositorio
+
+| Archivo | Descripción |
+|---|---|
+| `tarea4_bank_marketing.ipynb` | Notebook con el código, las gráficas y las respuestas a cada punto |
+| `bank-additional-full.csv` | Datos (41 188 llamadas, separador `;`). Si no está en la carpeta, el notebook lo descarga de la URL indicada en la celda de carga |
+| `README.md` | Este archivo |
+
+## Datos
+
+*Bank Marketing* con contexto socioeconómico (Moro, Cortez y Rita, 2014), del UCI Machine Learning Repository.
+
+- **Periodo:** llamadas hechas de mayo de 2008 a noviembre de 2010.
+- **Tamaño:** 41 188 filas, 20 variables de entrada y la variable objetivo `y`.
+- **Objetivo:** `y` indica si el cliente contrató el depósito. Solo 11.3 % dijo que sí.
+- **Variables:** datos del cliente (edad, trabajo, estado civil, educación, créditos), datos del contacto (tipo de teléfono, mes, día, número de contactos, resultado de la campaña anterior) y cinco indicadores económicos.
+- **Valores faltantes:** no hay nulos, pero varias categóricas usan la etiqueta `unknown`, que el notebook trata como una categoría más.
+
+## Cómo ejecutarlo
+
+**En Google Colab:** abre el notebook, sube `bank-additional-full.csv` al entorno (o deja que la celda de carga lo descargue) y usa *Entorno de ejecución > Ejecutar todo*.
+
+**En local:**
+
+```bash
+pip install numpy pandas matplotlib scikit-learn jupyter
+jupyter notebook tarea4_bank_marketing.ipynb
+```
+
+Requiere Python 3.9 o superior y scikit-learn 1.3 o superior (las curvas usan `RocCurveDisplay` y `PrecisionRecallDisplay`). Todos los resultados son reproducibles con `random_state=42`.
+
+## Qué hace el notebook
+
+1. **Variable que no se conoce al decidir.** Se descarta `duration` (duración de la llamada), que solo existe cuando la llamada ya terminó.
+2. **Partición y línea base.** Partición estratificada 80/20 y exactitud de un clasificador que siempre responde «no».
+3. **Regresión logística con umbral 0.5.** Las categóricas pasan por *one-hot* y las numéricas se estandarizan, todo dentro de un `Pipeline`. Se reportan la matriz de confusión, exactitud, precisión, sensibilidad, especificidad y F1.
+4. **Curvas ROC y de precisión contra sensibilidad,** con AUC y precisión promedio.
+5. **Umbral por costos.** Con un costo de 5 por llamada y un ingreso de 50 por aceptación, conviene llamar si la probabilidad es al menos 0.10. Se compara la ganancia con ese umbral y con el de 0.5.
+6. **Efecto de `duration`.** Se repite el modelo incluyéndola y se discute por qué sus buenas métricas no sirven en la práctica.
+
+## Resultados principales
+
+Evaluados en el conjunto de prueba (8 238 clientes, de los cuales 928 aceptan):
+
+| Concepto | Resultado |
+|---|---|
+| Exactitud de «siempre no» | 88.7 % |
+| Regresión logística, umbral 0.5 | exactitud 90.1 %, precisión 0.69, sensibilidad 0.22, especificidad 0.99, F1 0.33 |
+| AUC / precisión promedio | 0.80 / 0.46 (un modelo al azar tendría 0.11 de precisión promedio) |
+| Ganancia con umbral 0.5 | 8 680 |
+| Ganancia con umbral 0.10 | 22 100 |
+| Llamar a todos | 5 210 |
+| Modelo con `duration` | AUC 0.94 y ganancia de 32 860, no utilizable porque `duration` no se conoce antes de llamar |
+
+## Limitaciones
+
+- Los datos están ordenados por fecha, pero la partición es aleatoria, de modo que el desempeño en prueba probablemente sea algo mejor que el de un despliegue real, donde se entrenaría con el pasado y se probaría con el futuro.
+- El umbral de 0.10 supone que las probabilidades predichas son confiables y que los costos son constantes.
+- La variable `campaign` incluye el último contacto de la campaña, un matiz que se señala en el notebook.
+
+## Referencias
+
+- Moro, S., Cortez, P. y Rita, P. (2014). A data-driven approach to predict the success of bank telemarketing. *Decision Support Systems*, 62, 22-31.
+- UCI Machine Learning Repository: *Bank Marketing*.
+- Pedregosa, F. *et al.* (2011). Scikit-learn: Machine learning in Python. *JMLR*, 12, 2825-2830.
+
+## Declaración de uso de IA
+
+Se utilizó el asistente de inteligencia artificial Claude (Anthropic) en la elaboración de este notebook. La autora revisó el contenido y es responsable de su exactitud.
