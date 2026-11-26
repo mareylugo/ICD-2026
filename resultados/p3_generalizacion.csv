@@ -1,0 +1,3 @@
+,F1 patológica: dentro del hospital,F1 patológica: en el otro hospital,diferencia F1 patológica,F1 macro: dentro,F1 macro: en el otro
+entrenado en FNUSA → prueba en Mayo,0.695,0.493,-0.203,0.677,0.479
+entrenado en Mayo → prueba en FNUSA,0.565,0.761,0.196,0.544,0.76
