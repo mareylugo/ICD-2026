@@ -1,0 +1,11 @@
+# Datos originales y archivos grandes (ver README)
+datos/crudos/
+datos/partes/
+datos/partes_extendidos/
+datos/partes_extendidos_prueba/
+datos/*.npz
+
+# Archivos temporales
+__pycache__/
+.ipynb_checkpoints/
+*.pyc

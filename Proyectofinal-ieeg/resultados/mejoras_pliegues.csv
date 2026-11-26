@@ -1,0 +1,116 @@
+experimento,modelo,variante,pliegue,f1_patologica,f1_macro
+1. normalización por paciente,Regresión logística,original,0,0.7681435708651065,0.7176367652777558
+1. normalización por paciente,Regresión logística,original,1,0.8247053071867022,0.59116774149188
+1. normalización por paciente,Regresión logística,original,2,0.6478168397347679,0.38853883035698933
+1. normalización por paciente,Regresión logística,original,3,0.7802187867281439,0.6171420009125768
+1. normalización por paciente,Regresión logística,original,4,0.4203256043413912,0.5773553709526009
+1. normalización por paciente,Regresión logística,normalizado por paciente,0,0.6935878761583042,0.39714184918859174
+1. normalización por paciente,Regresión logística,normalizado por paciente,1,0.8120341363292644,0.43501085649279053
+1. normalización por paciente,Regresión logística,normalizado por paciente,2,0.4282332419636182,0.2284529117928833
+1. normalización por paciente,Regresión logística,normalizado por paciente,3,0.39507206506787873,0.3132804278386194
+1. normalización por paciente,Regresión logística,normalizado por paciente,4,0.4915400960100732,0.2823302121673541
+1. normalización por paciente,Regresión logística,original + normalizado,0,0.7073626801714064,0.6955832803308943
+1. normalización por paciente,Regresión logística,original + normalizado,1,0.5122067065640733,0.24151373255923406
+1. normalización por paciente,Regresión logística,original + normalizado,2,0.5677605382397364,0.48830560405569734
+1. normalización por paciente,Regresión logística,original + normalizado,3,0.8442437923250564,0.6534975998358501
+1. normalización por paciente,Regresión logística,original + normalizado,4,0.338372128968438,0.5704691553090749
+1. normalización por paciente,SVM (RBF),original,0,0.7856581717625617,0.770373942174407
+1. normalización por paciente,SVM (RBF),original,1,0.8223712678494158,0.7287706049813131
+1. normalización por paciente,SVM (RBF),original,2,0.6797931335285687,0.4112598947751278
+1. normalización por paciente,SVM (RBF),original,3,0.9126223703395127,0.6093364856423877
+1. normalización por paciente,SVM (RBF),original,4,0.41453740429849645,0.5671198137759932
+1. normalización por paciente,SVM (RBF),normalizado por paciente,0,0.685735363154718,0.5659141484797954
+1. normalización por paciente,SVM (RBF),normalizado por paciente,1,0.8167802831672785,0.44967282392203084
+1. normalización por paciente,SVM (RBF),normalizado por paciente,2,0.5298589822194972,0.27518456564388083
+1. normalización por paciente,SVM (RBF),normalizado por paciente,3,0.5714452964935901,0.337581046386008
+1. normalización por paciente,SVM (RBF),normalizado por paciente,4,0.4381911748603964,0.5119677788553346
+1. normalización por paciente,SVM (RBF),original + normalizado,0,0.7660654085427311,0.7167697906230726
+1. normalización por paciente,SVM (RBF),original + normalizado,1,0.8478850597809705,0.670585445314266
+1. normalización por paciente,SVM (RBF),original + normalizado,2,0.624308384507813,0.43088711354171466
+1. normalización por paciente,SVM (RBF),original + normalizado,3,0.7693220590416852,0.5813933070475766
+1. normalización por paciente,SVM (RBF),original + normalizado,4,0.37738900719734747,0.574240702984487
+1. normalización por paciente,Gradient boosting,original,0,0.8048418054609622,0.7930502632695609
+1. normalización por paciente,Gradient boosting,original,1,0.6601401594179639,0.47194637432716136
+1. normalización por paciente,Gradient boosting,original,2,0.6244971219904685,0.3671476005219773
+1. normalización por paciente,Gradient boosting,original,3,0.31328384950089583,0.3673059601396025
+1. normalización por paciente,Gradient boosting,original,4,0.38153846153846155,0.43418442524449435
+1. normalización por paciente,Gradient boosting,normalizado por paciente,0,0.6040453724151776,0.3525986256058524
+1. normalización por paciente,Gradient boosting,normalizado por paciente,1,0.675204647478215,0.5246361173047839
+1. normalización por paciente,Gradient boosting,normalizado por paciente,2,0.46339028178389174,0.23521855121042384
+1. normalización por paciente,Gradient boosting,normalizado por paciente,3,0.5236909733376165,0.36872565193682577
+1. normalización por paciente,Gradient boosting,normalizado por paciente,4,0.3117887926158858,0.18997711495246927
+1. normalización por paciente,Gradient boosting,original + normalizado,0,0.7464008859357697,0.7228438206759465
+1. normalización por paciente,Gradient boosting,original + normalizado,1,0.7628208322950412,0.5890654796950444
+1. normalización por paciente,Gradient boosting,original + normalizado,2,0.5231703204047218,0.32080303076954636
+1. normalización por paciente,Gradient boosting,original + normalizado,3,0.8993535554450522,0.7483793062415004
+1. normalización por paciente,Gradient boosting,original + normalizado,4,0.3648979184345829,0.5784469885385602
+1. normalización por paciente,Random forest,original,0,0.8153230417381361,0.7694356763135437
+1. normalización por paciente,Random forest,original,1,0.816379553798362,0.6754135248069613
+1. normalización por paciente,Random forest,original,2,0.6557275541795665,0.3382128481021782
+1. normalización por paciente,Random forest,original,3,0.9078145016653856,0.6062898099672488
+1. normalización por paciente,Random forest,original,4,0.41256772709386447,0.538293374443697
+1. normalización por paciente,Random forest,normalizado por paciente,0,0.62812563677117,0.42871928930101855
+1. normalización por paciente,Random forest,normalizado por paciente,1,0.7153193732330251,0.621800490087168
+1. normalización por paciente,Random forest,normalizado por paciente,2,0.5700758656094917,0.2555572219973255
+1. normalización por paciente,Random forest,normalizado por paciente,3,0.565565987973415,0.341866870299676
+1. normalización por paciente,Random forest,normalizado por paciente,4,0.3297293339516267,0.26161027622223176
+1. normalización por paciente,Random forest,original + normalizado,0,0.7053839364518976,0.709835147224064
+1. normalización por paciente,Random forest,original + normalizado,1,0.8367107883331381,0.658564711362397
+1. normalización por paciente,Random forest,original + normalizado,2,0.613700447835462,0.29407293288573594
+1. normalización por paciente,Random forest,original + normalizado,3,0.8384851016429964,0.5815454973927494
+1. normalización por paciente,Random forest,original + normalizado,4,0.3882910030133448,0.59834109427885
+2. umbral,Regresión logística,clase más probable,0,0.7681435708651065,0.7176367652777558
+2. umbral,Regresión logística,clase más probable,1,0.8247053071867022,0.59116774149188
+2. umbral,Regresión logística,clase más probable,2,0.6478168397347679,0.38853883035698933
+2. umbral,Regresión logística,clase más probable,3,0.7802187867281439,0.6171420009125768
+2. umbral,Regresión logística,clase más probable,4,0.4203256043413912,0.5773553709526009
+2. umbral,Regresión logística,umbral elegido por validación interna,0,0.7642487046632125,0.7184893927900209
+2. umbral,Regresión logística,umbral elegido por validación interna,1,0.8194976829338063,0.5899503860873544
+2. umbral,Regresión logística,umbral elegido por validación interna,2,0.4980544747081712,0.3467748279474923
+2. umbral,Regresión logística,umbral elegido por validación interna,3,0.7871176442605013,0.624882010622057
+2. umbral,Regresión logística,umbral elegido por validación interna,4,0.4896060749881348,0.6259009704483884
+2. umbral,SVM (RBF),clase más probable,0,0.7856581717625617,0.770373942174407
+2. umbral,SVM (RBF),clase más probable,1,0.8223712678494158,0.7287706049813131
+2. umbral,SVM (RBF),clase más probable,2,0.6797931335285687,0.4112598947751278
+2. umbral,SVM (RBF),clase más probable,3,0.9126223703395127,0.6093364856423877
+2. umbral,SVM (RBF),clase más probable,4,0.41453740429849645,0.5671198137759932
+2. umbral,SVM (RBF),umbral elegido por validación interna,0,0.7847358752054662,0.77171129853632
+2. umbral,SVM (RBF),umbral elegido por validación interna,1,0.7349615841089387,0.681899234620959
+2. umbral,SVM (RBF),umbral elegido por validación interna,2,0.5831808633191028,0.37925979040968494
+2. umbral,SVM (RBF),umbral elegido por validación interna,3,0.9094963954151756,0.6117385926131094
+2. umbral,SVM (RBF),umbral elegido por validación interna,4,0.42035785785785784,0.5751776007197205
+2. umbral,Random forest,clase más probable,0,0.8153230417381361,0.7694356763135437
+2. umbral,Random forest,clase más probable,1,0.816379553798362,0.6754135248069613
+2. umbral,Random forest,clase más probable,2,0.6557275541795665,0.3382128481021782
+2. umbral,Random forest,clase más probable,3,0.9078145016653856,0.6062898099672488
+2. umbral,Random forest,clase más probable,4,0.41256772709386447,0.538293374443697
+2. umbral,Random forest,umbral elegido por validación interna,0,0.8077460850111857,0.7705077982805295
+2. umbral,Random forest,umbral elegido por validación interna,1,0.6557697680916457,0.6033205717856276
+2. umbral,Random forest,umbral elegido por validación interna,2,0.6222820858187416,0.3303656378587095
+2. umbral,Random forest,umbral elegido por validación interna,3,0.9233455007141723,0.6167700912406168
+2. umbral,Random forest,umbral elegido por validación interna,4,0.4744186046511628,0.5875861263425888
+3. hiperparámetros,Gradient boosting,valores por omisión,0,0.8048418054609622,0.7930502632695609
+3. hiperparámetros,Gradient boosting,valores por omisión,1,0.6601401594179639,0.47194637432716136
+3. hiperparámetros,Gradient boosting,valores por omisión,2,0.6244971219904685,0.3671476005219773
+3. hiperparámetros,Gradient boosting,valores por omisión,3,0.31328384950089583,0.3673059601396025
+3. hiperparámetros,Gradient boosting,valores por omisión,4,0.38153846153846155,0.43418442524449435
+3. hiperparámetros,Gradient boosting,validación anidada,0,0.7970883189103065,0.769346899590332
+3. hiperparámetros,Gradient boosting,validación anidada,1,0.709809663250366,0.5770108094697347
+3. hiperparámetros,Gradient boosting,validación anidada,2,0.6491076923076923,0.37543330988661106
+3. hiperparámetros,Gradient boosting,validación anidada,3,0.8090207606099578,0.639414954457382
+3. hiperparámetros,Gradient boosting,validación anidada,4,0.4094849720586014,0.3068295431513007
+3. hiperparámetros,SVM (RBF),valores por omisión,0,0.7856581717625617,0.770373942174407
+3. hiperparámetros,SVM (RBF),valores por omisión,1,0.8223712678494158,0.7287706049813131
+3. hiperparámetros,SVM (RBF),valores por omisión,2,0.6797931335285687,0.4112598947751278
+3. hiperparámetros,SVM (RBF),valores por omisión,3,0.9126223703395127,0.6093364856423877
+3. hiperparámetros,SVM (RBF),valores por omisión,4,0.41453740429849645,0.5671198137759932
+3. hiperparámetros,SVM (RBF),validación anidada,0,0.7893862911795961,0.7569743480360738
+3. hiperparámetros,SVM (RBF),validación anidada,1,0.8549377499859163,0.5067972969319257
+3. hiperparámetros,SVM (RBF),validación anidada,2,0.6777212486652848,0.4309115413910282
+3. hiperparámetros,SVM (RBF),validación anidada,3,0.930119719424081,0.6790339961294133
+3. hiperparámetros,SVM (RBF),validación anidada,4,0.4399589009313579,0.5828015488874951
+3. hiperparámetros,SVM (RBF),entrenado con 30 mil fragmentos,0,0.7747223854743419,0.7826669182611197
+3. hiperparámetros,SVM (RBF),entrenado con 30 mil fragmentos,1,0.8232923207467119,0.7288986879184076
+3. hiperparámetros,SVM (RBF),entrenado con 30 mil fragmentos,2,0.6803151560270488,0.3930832184616716
+3. hiperparámetros,SVM (RBF),entrenado con 30 mil fragmentos,3,0.8996995130038338,0.6197235211360272
+3. hiperparámetros,SVM (RBF),entrenado con 30 mil fragmentos,4,0.40754831836858924,0.5319744885113266
